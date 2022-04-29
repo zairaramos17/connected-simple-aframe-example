@@ -9,28 +9,32 @@
         <!-- Load all of the assets we are going to use -->
       <a-assets>
           <!-- Hilly sky for the background -->
-          <img id="hilly-sky" src="./assets/hilly-skybox.jpeg" />
+          <img id="milky-way" src="./assets/Milky_Way_360.png" />
           <!-- Cute turtle -->
-          <img id="sunglasses-turtle" src="./assets/sunglasses-turtle.png" />
-          <!-- Turtle 3D model -->
-        <a-asset-item id="turtle" src="./assets/turtle.glb" />
+          <!-- <img id="sunglasses-turtle" src="./assets/sunglasses-turtle.png" /> -->
+          <!-- bird 3D model -->
+        <a-asset-item id="bird" src="./assets/Hummingbird.glb" />
+        <a-asset-item id="flower" src="./assets/flower.glb" />
+        <a-asset-item id="flower" src="./assets/flower.glb" />
       </a-assets>
-      <a-image src="#sunglasses-turtle" position="0 3 -4" width="2.5" height="1.75" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-image>
-      <!-- Turtle -->
-      <a-entity position="-1 2 -4" scale="0.03 0.03 0.03" rotation="0 -180 0" gltf-model="#turtle" animation-mixer></a-entity>
+      <!-- <a-image src="#sunglasses-turtle" position="0 3 -4" width="2.5" height="1.75" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-image> -->
+      <!-- bird -->
+      <a-entity position="1 2 -4" scale="15 15 15" rotation="0 -180 0" gltf-model="#bird" animation-mixer></a-entity>
+      <a-entity position="-2 6 -6" scale="1 1 1" rotation="0 -180 0" gltf-model="#flower" animation-mixer></a-entity>
+      <a-entity position="4 6 2" scale="1 1 1" rotation="0 -180 0" gltf-model="#flower" animation-mixer></a-entity>
       <!-- Blue box -->
-      <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0000EE"></a-box>
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#0000EE"></a-box> -->
       <!-- Pink sphere -->
-      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <!-- <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere> -->
       <!-- Yellow cylinder -->
-      <a-cylinder
+      <!-- <a-cylinder -->
         position="1 0.75 -3"
         radius="0.5"
         height="1.5"
         color="#FFC65D"
       ></a-cylinder>
       <!-- Ground plane -->
-      <a-plane
+      <!-- <a-plane -->
         position="0 0 -4"
         rotation="-90 0 0"
         width="4"
@@ -44,7 +48,7 @@
       <!-- An ambient light that is grayish-white -->
       <a-entity light="type: ambient; color: #CCC"></a-entity>
     <!-- Sky background -->
-      <a-sky src="#hilly-sky"></a-sky>
+      <a-sky src="#milky-way"></a-sky>
     </a-scene>
   </body>
 </html>
