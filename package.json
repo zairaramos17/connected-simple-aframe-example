@@ -1,0 +1,14 @@
+{
+  "name": "aframe-starter-stalgia",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx live-server --https='https-config.js'"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "live-server": "^1.2.2"
+  }
+}
